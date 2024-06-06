@@ -1,6 +1,8 @@
 import Top from "@components/Home/Top";
 
-export default function Home() {
+
+const Home = () => {
+
   return (
     <main>
       <Top />
@@ -32,3 +34,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default Home;
