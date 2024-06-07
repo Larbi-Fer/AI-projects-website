@@ -8,6 +8,8 @@
   --foreground-color: #000;
 
   --secondary-background: #07d;
+
+  --z-index-navbar: 10;
 }
 
 * {
@@ -28,4 +30,18 @@ body {
 #all {
   height: 100vh;
   overflow: auto;
+}
+
+.back-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: calc( var(--z-index-navbar) - 1 );
+}
+
+.back-box.show {
+  display: block;
 }
