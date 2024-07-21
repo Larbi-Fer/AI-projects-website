@@ -5,7 +5,7 @@ import Link from "next/link"
 import '@styles/navbar.css'
 import { Button } from "@mui/material"
 import { useRef } from "react"
-import BackBox from "./BackBox"
+import BackBox from "./material/BackBox"
 
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="fade">
+      <header className="fade small">
           <h2 className="logo pan">
             <div>AI PROJECTS</div>
           </h2>
@@ -32,7 +32,8 @@ const Navbar = () => {
           <nav>
             <ul className="nav-links" ref={listRef}>
               <li  className="pan"><Link href='/projects'>ALL</Link></li>
-              <li className="pan d1"><Link href='/projects?type=img'>Images</Link></li>
+              {/* temporary */}
+              <li className="pan d1"><Link href='/happysad'>Images</Link></li>
               <li className="pan d1"><Link href='/projects?type=lng'>Languages</Link></li>
             </ul>
           </nav>

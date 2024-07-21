@@ -13,6 +13,8 @@ const Top = () => {
     var section = document.getElementById('all')
     if(!section) return
 
+    section.children[0].classList.remove('small')
+
     section.onscroll = e => {
       if (!section) return
       if (section.scrollTop > 150) section.children[0].classList.add('small')
@@ -20,7 +22,7 @@ const Top = () => {
     }
   }, [])
 
-  const handleSearch = (e : React.FormEvent) => {
+  const handleSearch = async(e : React.FormEvent) => {
     e.preventDefault();
     console.log(search);
   }
