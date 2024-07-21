@@ -2,7 +2,7 @@ export const models : { [key: string]: ModelDetails } = {
     happysad: {
         name: 'Happy or Sad',
         description: 'A model that predicts if a person is happy or sad based on their facial expression.',
-        url: '/models/happysad/v{version}/model.json',
+        // url: '/models/happysad/v{version}/model.json',
         url: `https://larbi-fer.github.io/My-Models/happysad/v{version}/model.json`,
         // lastVersionUrl: 'https://larbi-fer.github.io/My-Models/happysad/v1/model.json',
         inputShape: [256, 256, 3],

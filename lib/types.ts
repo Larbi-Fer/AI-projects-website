@@ -2,7 +2,6 @@ interface ModelDetails {
     name: string,
     description: string,
     url: string,
-    lastVersionUrl: string,
     inputShape: number[] | number[][] | number[][][],
     outputShape: number[],
     classes: string[],
